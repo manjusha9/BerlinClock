@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
-    class SimpleFormat : ITimeFormatFactory
+    public class SimpleFormat : ITimeFormatFactory
     {
         public Time setTime(String time)
         {
             char[] delimiterChars = {':'};
-            String[] splitTime = text.Split(delimiterChars);
-            Time time = new time(Int32.Parse(timeValues[2]), Int32.Parse(timeValues[1]), Int32.Parse(timeValues[0]));
-            return time;
+            String[] splitTime = time.Split(delimiterChars);
+            Time simpleTime = new Time(Int32.Parse(splitTime[2]), Int32.Parse(splitTime[1]), Int32.Parse(splitTime[0]));
+            return simpleTime;
         }
         
         public String getTime(Time time)

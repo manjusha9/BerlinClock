@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
     class BerlinClockMain
     {
@@ -17,13 +17,13 @@ namespace BerlinClock
 				
 			Console.WriteLine("Enter Time:");
 			String t = Console.ReadLine();
-			Time inputTime = inputFormat.setInput(t);
+			Time inputTime = inputFormat.setTime(t);
 					
 			Console.WriteLine("Output Format Type:\n1. Simple \n2. Berlin");
 			String outputTimeFormat = Console.ReadLine();
 			ITimeFormatFactory outputFormat = factory.getTimeFormat(outputTimeFormat);	
 			Console.WriteLine("\nOutput Time:");
-			Console.WriteLine(outputFormat.getOutput(inputTime));
+			Console.WriteLine(outputFormat.getTime(inputTime));
         }
     }
 }

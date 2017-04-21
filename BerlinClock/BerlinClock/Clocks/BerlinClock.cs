@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
-    class BerlinClock
+    public class BerlinClock : Clock
     {
         private String hourAndQuarterLampColor = "R"; //Red
         private String minuteLampColor = "Y"; //Yellow
@@ -26,7 +26,7 @@ namespace BerlinClock
 
         public BerlinClock(Time time)
         {
-            BerlinClock(time, hourAndQuarterLampColor, minuteLampColor, secondLampColor, offLampColor);
+            timeFormat = time;
         }
 
         public BerlinClock(Time time, String hourAndQuarterLampColor, String minuteLampColor, String secondLampColor, String offLampColor)
@@ -35,9 +35,10 @@ namespace BerlinClock
             this.minuteLampColor = minuteLampColor;
             this.secondLampColor = secondLampColor;
             this.offLampColor = offLampColor;
+            timeFormat = time;
         }
 
-        public String showTime()
+        public override String showTime()
         {
             String berlinFormat = timeFormat.getTime();
             String berlinResult = setLampColor(berlinFormat.Substring(secondsLampPos, numSecondLamps), secondLampColor)

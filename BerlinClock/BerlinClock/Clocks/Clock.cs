@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
-    interface Clock
+    abstract public class Clock
     {
         public ITimeFormatFactory timeFormat;
-        public String showTime();
+        abstract public String showTime();
     }
 }

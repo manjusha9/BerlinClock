@@ -5,11 +5,11 @@
 /// http://www.dotnettricks.com/learn/designpatterns/factory-method-design-pattern-dotnet
 /// </summary>
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
-    interface ITimeFormatFactory
+    public interface ITimeFormatFactory
     {
-        void setTime(String time);
+        Time setTime(String time);
 
         String getTime(Time time);
     }

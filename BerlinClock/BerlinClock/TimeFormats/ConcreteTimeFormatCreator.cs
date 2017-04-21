@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BerlinClock
+namespace BerlinClockProgram
 {
     public class ConcreteTimeFormatCreator : TimeFormatCreator
     {

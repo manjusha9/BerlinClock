@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{31C1C9AE-C956-474F-ABCE-769794A7121B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BerlinClock</RootNamespace>
-    <AssemblyName>BerlinClock</AssemblyName>
+    <RootNamespace>BerlinClockProgram</RootNamespace>
+    <AssemblyName>BerlinClock/BerlinClock</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BerlinClockMain.cs" />
-    <Compile Include="BerlinClock.cs" />
-  <Compile Include="IClock.cs" />
-  <Compile Include="BerlinFormat.cs" />
-    <Compile Include="ConcreteTimeFormatCreator.cs" />
-  <Compile Include="ITimeFormatFactory.cs" />
-    <Compile Include="SimpleFormat.cs" />
-  <Compile Include="TimeFormatCreator.cs" />
+    <Compile Include="Clocks\BerlinClock.cs" />
+  <Compile Include="Clocks\Clock.cs" />
+  <Compile Include="TimeFormats\BerlinFormat.cs" />
+    <Compile Include="TimeFormats\ConcreteTimeFormatCreator.cs" />
+  <Compile Include="TimeFormats\ITimeFormatFactory.cs" />
+    <Compile Include="TimeFormats\SimpleFormat.cs" />
+  <Compile Include="TimeFormats\TimeFormatCreator.cs" />
     <Compile Include="Time.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
