@@ -42,7 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BerlinClockMain.cs" />
+    <Compile Include="BerlinClock.cs" />
+  <Compile Include="IClock.cs" />
+  <Compile Include="BerlinFormat.cs" />
+    <Compile Include="ConcreteTimeFormatCreator.cs" />
+  <Compile Include="ITimeFormatFactory.cs" />
+    <Compile Include="SimpleFormat.cs" />
+  <Compile Include="TimeFormatCreator.cs" />
+    <Compile Include="Time.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
