@@ -11,6 +11,6 @@ namespace BerlinClock
     {
         void setTime(String time);
 
-        String getTime(DateTime time);
+        String getTime(Time time);
     }
 }
