@@ -8,6 +8,7 @@ namespace BerlinClock
 {
     interface Clock
     {
+        public ITimeFormatFactory timeFormat;
         public String showTime();
     }
 }
